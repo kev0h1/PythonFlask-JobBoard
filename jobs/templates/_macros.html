@@ -11,6 +11,7 @@
     <div class="content">
       <p>
         <a href="">{{ job['employer_name'] }}</a>
+        <a href="">{{ url_for('job', job_id=job['id']) }}</a>
         <br>
         ${{ job['salary'] }}
         <br>
